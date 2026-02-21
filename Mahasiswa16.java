@@ -1,0 +1,36 @@
+public class Mahasiswa16 {
+
+    String nim;
+    String nama;
+    String kelas;
+    double ipk;
+    
+    void tampilkanInformasi() {
+        System.out.println("NIM: " + nim);
+        System.out.println("Nama: " + nama);
+        System.out.println("Kelas: " + kelas);
+        System.out.println("IPK: " + ipk);
+    }
+    
+    void ubahKelas(String kelasBaru) {
+        kelas = kelasBaru;
+        System.out.println("Kelas mahasiswa " + nama + " berhasil diubah menjadi: " + kelas);
+    }
+    
+    void updateIpk(double ipkBaru) {
+        ipk = ipkBaru;
+        System.out.println("IPK mahasiswa " + nama + " berhasil diubah menjadi: " + ipk);
+    }
+    
+    String nilaiKinerja(double ipk) {
+        if (ipk >= 3.5) {
+            return "Kinerja sangat baik";
+        } else if (ipk >= 3.0) {
+            return "Kinerja baik";
+        } else if (ipk >= 2.0) {
+            return "Kinerja cukup";
+        } else {
+            return "Kinerja kurang";
+        }
+    }
+}
