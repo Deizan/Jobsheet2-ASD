@@ -1,4 +1,4 @@
-public class Dosen16 {
+public class Dosen16  {
     
     String idDosen;
     String nama;
